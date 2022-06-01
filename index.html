@@ -18,7 +18,7 @@
       href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
     <title>Work Day Scheduler</title>
   </head>
 
@@ -28,11 +28,57 @@
       <p class="lead">A simple calendar app for scheduling your work day</p>
       <p id="currentDay" class="lead"></p>
     </header>
+    
     <div class="container">
       <!-- Timeblocks go here -->
+      <div class="row" id="nineAM">
+        <div class="col-2 time">
+          9:00 AM
+        </div>
+        <div class="col-9 task-field">
+          <p>To Do</p>
+        </div>
+        <div class="col-1">
+          <button class="saveBtn btn-lg">Save</button>
+        </div>
+      </div>
+      <div class="row" id="tenAM">
+        <div class="col-2 time">
+          10:00 AM
+        </div>
+        <div class="col-9 task-field">
+          <p>To Do</p>
+        </div>
+        <div class="col-1">
+          <button class="saveBtn btn-lg">Save</button>
+        </div>
+      </div>
+      <div class="row" id="elevenAM">
+        <div class="col-2 time">
+          11:00 AM
+        </div>
+        <div class="col-9 task-field">
+          <p>To Do</p>
+        </div>
+        <div class="col-1">
+          <button class="saveBtn btn-lg">Save</button>
+        </div>
+      </div>
+      <div class="row" id="twelvePM">
+        <div class="col-2 time">
+          11:00 AM
+        </div>
+        <div class="col-9 task-field">
+          <p>Lunch</p>
+        </div>
+        <div class="col-1">
+          <button class="saveBtn btn-lg">Save</button>
+        </div>
+      </div>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script> 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
     <script src="./assets/js/script.js"></script>
   </body>

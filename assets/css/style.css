@@ -31,9 +31,9 @@ textarea{
 }
 
 .row {
-  white-space: pre-wrap;
+  
   height: 80px;
-  border-top: 1px solid white;;
+  border-top: 1px solid white;
 }
 
 .hour {
@@ -63,9 +63,21 @@ textarea{
   border-bottom-right-radius: 15px;
   background-color: #06AED5;
   color: white;
+  height: 100%;
+  padding-left: 0;
 }
 
 .saveBtn i:hover {
   font-size: 20px;
   transition: all .3s ease-in-out;
 }
+.time {
+  background-color: lightblue;
+}
+.task-field {
+  background-color: #d3d3d3;
+}
+div .col-1 {
+  padding-left: 0;
+}
+
