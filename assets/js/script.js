@@ -3,7 +3,6 @@ function displayDate() {
   const date = moment().format('MMMM Do YYYY');
   document.getElementById("currentDay").innerHTML = day + ', ' + date;
 };
-//setInterval(displayDate, (18 * 10**5));
 displayDate();
 
 $(document).ready(function() {
@@ -18,13 +17,13 @@ function hourUpdate() {
   var currentHour = moment().hours();
   console.log(currentHour);
   $(".time-block").each(function() {
-    //console.log($(this).children("textarea.task-field"));
+    console.log($(this).children("textarea.task-field"));
     var blockHourString = $(this).attr("id");
-    //console.log(blockHourString);
+    console.log(blockHourString);
     var timeNumber = blockHourString.substring(4);
-    //console.log(timeNumber);
+    console.log(timeNumber);
     var numNumber = parseInt(timeNumber);
-    //console.log(numNumber);
+    console.log(numNumber);
     if (numNumber < currentHour) {
       $(this).children("textarea.task-field").addClass("past");
     }
@@ -38,18 +37,18 @@ function hourUpdate() {
       $(this).children("textarea.task-field").addClass("future");
     }
   });
-  setInterval(hourUpdate, 60000);
 };
 hourUpdate();
 
-$("#time9 .text-field").val(localStorage.getItem("time9"));
-$("#time10 .text-field").val(localStorage.getItem("time10"));
-$("#time11 .text-field").val(localStorage.getItem("time11"));
-$("#time12 .text-field").val(localStorage.getItem("time12"));
-$("#time13 .text-field").val(localStorage.getItem("time13"));
-$("#time14.text-field").val(localStorage.getItem("time14"));
-$("#time15 .text-field").val(localStorage.getItem("time15"));
-$("#time16 .text-field").val(localStorage.getItem("time16"));
-$("#time17 .text-field").val(localStorage.getItem("time17"));
+
+$("#time9 .task-field").val(localStorage.getItem("time9"));
+$("#time10 .task-field").val(localStorage.getItem("time10"));
+$("#time11 .task-field").val(localStorage.getItem("time11"));
+$("#time12 .task-field").val(localStorage.getItem("time12"));
+$("#time13 .task-field").val(localStorage.getItem("time13"));
+$("#time14 .task-field").val(localStorage.getItem("time14"));
+$("#time15 .task-field").val(localStorage.getItem("time15"));
+$("#time16 .task-field").val(localStorage.getItem("time16"));
+$("#time17 .task-field").val(localStorage.getItem("time17"));
 
 
