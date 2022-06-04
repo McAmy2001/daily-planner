@@ -1,46 +1,13 @@
-# 05 Third-Party APIs: Work Day Scheduler
+# Challenge, week 5: Work Day Planner
 
-Create a simple calendar application that allows the user to save events for each hour of the day. This app will run in the browser and feature dynamically updated HTML and CSS powered by jQuery.
+## The goal of this project is to create a daily planner for standard work hours in which the user can enter tasks in the time slots, those tasks are then saved to local storage, and the time slots change colors to indicate times that are past (gray), current (red), and future (green). 
 
-The starter code uses the [Moment.js](https://momentjs.com/) library to work with date and time, but you're free to use a different JavaScript solution to handle this functionality because Moment.js is considered a "legacy" product. Learn more about these other solutions in the [Moment.js project status page.](https://momentjs.com/docs/#/-project-status/).
+### The starter code included a basic HTML outline, to which I added the time slots using a Bootstrap grid layout. I used moment.js for the date at the top of the planner and to get the hour time which was needed for changing the background colors according to the above mentioned conditions. 
 
-## User Story
+### My planner page was built using [Git Hub Pages](https://mcamy2001.github.io/daily-planner/). 
 
-```
-AS AN employee with a busy schedule
-I WANT to add important events to a daily planner
-SO THAT I can manage my time effectively
-```
+![Screenshot](./assets/images/Screen%20Shot%202022-06-03%20at%207.14.40%20PM%20Small.jpeg)
 
-## Acceptance Criteria
+#### I had a tutoring session with Michelle Jordan while working on this project. We discussed saving items to local storage, retrieving them local storage, and using moment.js to updates color backgrounds.
 
-```
-GIVEN I am using a daily planner to create a schedule
-WHEN I open the planner
-THEN the current day is displayed at the top of the calendar
-WHEN I scroll down
-THEN I am presented with timeblocks for standard business hours
-WHEN I view the timeblocks for that day
-THEN each timeblock is color coded to indicate whether it is in the past, present, or future
-WHEN I click into a timeblock
-THEN I can enter an event
-WHEN I click the save button for that timeblock
-THEN the text for that event is saved in local storage
-WHEN I refresh the page
-THEN the saved events persist
-```
-
-The following animation demonstrates the application functionality:
-
-![Work Day Scheduler app with color-coded time slots shows a new event being typed in the 5PM slot.](./Assets/05-third-party-apis-homework-demo.gif)
-
-## Review
-
-You are required to submit the following for review:
-
-* The URL of the deployed application.
-
-* The URL of the GitHub repository. Give the repository a unique name and include a README describing the project.
-
----
-© 2022 Trilogy Education Services, LLC, a 2U, Inc. brand. Confidential and Proprietary. All Rights Reserved.
+##### ##### For this class assignment a Table of Contents, Installation Instructions, Usage Information, Credits, License Information, Badges, Features, and Tests are not necessary but I'd like to acknowledge that those would be included here when pertinent.
